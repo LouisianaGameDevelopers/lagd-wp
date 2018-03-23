@@ -1,0 +1,6 @@
+[submodule "wp-content/plugins/wp-graphql"]
+	path = wp-content/plugins/wp-graphql
+	url = https://github.com/wp-graphql/wp-graphql.git
+[submodule "wp-content/plugins/wp-graphiql"]
+	path = wp-content/plugins/wp-graphiql
+	url = https://github.com/wp-graphql/wp-graphiql.git
