@@ -1,0 +1,14 @@
+{
+    "name": "lagd/lagd-wp",
+    "description": "🐘 All the WordPress configuration that’s fit to print!",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LAGD Developers",
+            "email": "hello@lagd.network"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
