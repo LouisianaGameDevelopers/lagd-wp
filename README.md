@@ -95,12 +95,14 @@ https://api.wordpress.org/secret-key/1.1/salt.
 At this point, you’re ready to install WordPress! Take a deep breath and let
 WP-CLI be your guide:
 
+```
 $ wp core install \
     --url=https://admin.lagd.network \
     --title=LAGD \
     --admin_user=yourname \
     --admin_password=something-super-secret! \
     --admin_email=you@lagd.network
+```
 
 ### Install plugins
 
