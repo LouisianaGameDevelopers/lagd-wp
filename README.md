@@ -5,7 +5,7 @@ WordPress-powered Gamedev Directory API up and running.
 
 ## Table of contents
 
-* [<g-emoji class="g-emoji" alias="elephant" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f418.png">🐘</g-emoji> LAG-WP](#-lag-wp)
+* [<g-emoji class="g-emoji" alias="elephant" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f418.png">🐘</g-emoji> LAGD-WP](#-lagd-wp)
   * [Table of contents](#table-of-contents)
   * [Overview](#overview)
   * [Setup](#setup)
