@@ -5,7 +5,7 @@
 /wp-content/themes/*
 !/wp-content/plugins/*
 
-!README
+!README.md
 !LICENSE
 
 !/wp-content/themes/lagd
