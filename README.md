@@ -1,4 +1,4 @@
-# 🐘 LAG-WP
+# 🐘 LAGD-WP
 
 This project contains all of the assets and instructions needed for getting our
 WordPress-powered Gamedev Directory API up and running.
