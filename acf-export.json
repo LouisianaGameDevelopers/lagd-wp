@@ -81,7 +81,140 @@
             {
                 "key": "field_5ab6fccf5135c",
                 "label": "Games",
-                "name": "games",
+                "name": "developers_games",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "lagd_game"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            },
+            {
+                "key": "field_5abff547ad1ae",
+                "label": "Studios",
+                "name": "people_studios",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "lagd_studio"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "lagd_person"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5abff4a376460",
+        "title": "Studio",
+        "fields": [
+            {
+                "key": "field_5abff4acfe94e",
+                "label": "Website",
+                "name": "website",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5abff5110a4b8",
+                "label": "People",
+                "name": "people_studios",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "lagd_person"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            },
+            {
+                "key": "field_5abff4b9fe94f",
+                "label": "Games",
+                "name": "developers_games",
                 "type": "relationship",
                 "instructions": "",
                 "required": 0,
@@ -109,7 +242,7 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "lagd_person"
+                    "value": "lagd_studio"
                 }
             ]
         ],
@@ -119,6 +252,7 @@
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": [
+            "permalink",
             "the_content",
             "excerpt",
             "custom_fields",
@@ -129,6 +263,7 @@
             "author",
             "format",
             "page_attributes",
+            "featured_image",
             "categories",
             "tags",
             "send-trackbacks"
@@ -158,6 +293,52 @@
                 "toolbar": "basic",
                 "media_upload": 0,
                 "delay": 0
+            },
+            {
+                "key": "field_5abff25ad41f1",
+                "label": "Website",
+                "name": "website",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5abff2726cd76",
+                "label": "Developers",
+                "name": "developers_games",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "lagd_person",
+                    "lagd_studio"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search",
+                    "post_type"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
             },
             {
                 "key": "field_5ab590c44a735",
@@ -206,11 +387,14 @@
             "custom_fields",
             "discussion",
             "comments",
+            "revisions",
             "slug",
             "author",
             "format",
             "page_attributes",
+            "featured_image",
             "categories",
+            "tags",
             "send-trackbacks"
         ],
         "active": 1,
