@@ -1,11 +1,34 @@
-/*
-!/wp-content
-/wp-content/*
-!/wp-content/themes
-/wp-content/themes/*
-!/wp-content/plugins/*
+# External libraries
+node_modules
+vendor
 
-!README.md
-!LICENSE
+# WordPress core
+*.log
+wp-admin/
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/index.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/
+wp-content/themes/index.php
+wp-includes/
 
-!/wp-content/themes/lagd
+/.env
+/.htaccess
+/index.php
+/license.txt
+/notes.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+/wp-*.php
+/xmlrpc.php
+
+.DS_Store
