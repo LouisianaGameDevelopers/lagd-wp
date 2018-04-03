@@ -1,19 +1,20 @@
 <?php
 /**
- * LAGD functions and definitions
+ * LAGD functions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package LAGD
  */
 
-define('ACF_EARLY_ACCESS', '5');
+require 'definitions.php';
 
 add_theme_support('post-thumbnails');
+add_filter('show_admin_bar', '__return_false');
 
-add_action('init', function() {
+add_action('init', function () {
     register_post_type('lagd_person', [
-        'labels' => [
+      'labels' => [
             'name' => __('People'),
             'singular_name' => __('Person')
         ],
@@ -22,9 +23,9 @@ add_action('init', function() {
     ]);
 });
 
-add_action('init', function() {
+add_action('init', function () {
     register_post_type('lagd_game', [
-        'labels' => [
+      'labels' => [
             'name' => __('Games'),
             'singular_name' => __('Game')
         ],
@@ -33,7 +34,7 @@ add_action('init', function() {
     ]);
 });
 
-add_action('init', function() {
+add_action('init', function () {
     register_post_type('lagd_studio', [
         'labels' => [
             'name' => __('Studios'),
@@ -44,7 +45,7 @@ add_action('init', function() {
     ]);
 });
 
-add_action('init', function() {
+add_action('init', function () {
     register_post_type('lagd_organization', [
         'labels' => [
             'name' => __('Organizations'),
