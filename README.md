@@ -98,7 +98,7 @@ WP-CLI be your guide:
 ```
 $ wp core install \
     --url=https://admin.lagd.network \
-    --title=LAGD \
+    --title='Louisiana Game Developers' \
     --admin_user=yourname \
     --admin_password=something-super-secret! \
     --admin_email=you@lagd.network
@@ -110,14 +110,14 @@ We use the following plugins to help get things done and keep shit running:
 
 * [WPGraphQL](https://github.com/wp-graphql/wp-graphql)
 * [WPGraphiQL](https://github.com/wp-graphql/wp-graphiql)
-* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 * [WP Offload S3 Lite](https://wordpress.org/plugins/amazon-s3-and-cloudfront/)
 * [WP fail2ban](https://wordpress.org/plugins/wp-fail2ban/)
+* [Advanced Custom Fields Pro](https://www.advancedcustomfields.com/pro/)
 
 You don’t need to install the WPGraphiQL or WP-GraphiQL plugins, as
 they are included as submodules. For the others, WPI-CLI comes in handy:
 
-    $ wp plugin install advanced-custom-fields amazon-s3-and-cloudfront wp-fail2ban
+    $ wp plugin install amazon-s3-and-cloudfront wp-fail2ban
 
 *Pro Tip: Now’s a good time to remove the plugins that come bundles with
 WordPress, i.e., `wp plugin delete akismet hello`.*
