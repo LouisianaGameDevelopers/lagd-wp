@@ -5,7 +5,7 @@ WordPress-powered Gamedev Directory API up and running.
 
 ## Table of contents
 
-* [<g-emoji class="g-emoji" alias="elephant" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f418.png">🐘</g-emoji> LAGD-WP](#-lagd-wp)
+* [LAGD-WP](#-lagd-wp)
   * [Table of contents](#table-of-contents)
   * [Overview](#overview)
   * [Setup](#setup)
@@ -16,6 +16,8 @@ WordPress-powered Gamedev Directory API up and running.
      * [Set up your environment](#set-up-your-environment)
      * [Install WordPress](#install-wordpress)
      * [Install plugins](#install-plugins)
+  * [Roadmap](#roadmap)
+  * [Contributing](#contributing)
   * [License](#license)
 
 ## Overview
@@ -129,6 +131,17 @@ Now, activate all your plugins:
 Note: I like to use [Admin Menu Editor](https://wordpress.org/plugins/admin-menu-editor/)
 to declutter the menus. You can grab it with
 `wp plugin install --activate admin-menu-editor`.
+
+## Roadmap
+
+- [ ] Continuous integration for linting
+- [ ] Contributing guidelines
+- [ ] Issue template
+- [ ] Pull request template
+
+## Contributing
+
+Contributions are welcome and appreciated; just be sure to follow the [code of conduct](https://github.com/LouisianaGameDevelopers/lagd-wp/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
