@@ -1,29 +1,11 @@
 [
     {
-        "key": "group_5ab587ca19c5e",
-        "title": "Person",
+        "key": "group_5ac439c784bbc",
+        "title": "Organization",
         "fields": [
             {
-                "key": "field_5ab587daecd14",
-                "label": "Email",
-                "name": "email",
-                "type": "email",
-                "instructions": "",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5ab58832ecd15",
-                "label": "Twitter Username",
+                "key": "field_5ac439e942cb6",
+                "label": "Twitter",
                 "name": "twitter",
                 "type": "text",
                 "instructions": "",
@@ -36,16 +18,167 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "prepend": "",
+                "prepend": "@",
                 "append": "",
                 "maxlength": ""
             },
             {
+                "key": "field_5ac439d4631a5",
+                "label": "Website",
+                "name": "website",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5ac439fa94208",
+                "label": "Description",
+                "name": "description",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5ac43a0cb1a86",
+                "label": "People",
+                "name": "people_organizations",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "lagd_organization"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "permalink",
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "revisions",
+            "slug",
+            "author",
+            "format",
+            "page_attributes",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5ab587ca19c5e",
+        "title": "Person",
+        "fields": [
+            {
+                "key": "field_5ab58832ecd15",
+                "label": "Twitter",
+                "name": "twitter",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "@",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ac43938957ed",
+                "label": "Website",
+                "name": "website",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5ab587daecd14",
+                "label": "Email",
+                "name": "email",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
                 "key": "field_5ab5884cecd16",
-                "label": "Discord Username",
+                "label": "Discord",
                 "name": "discord",
                 "type": "text",
-                "instructions": "This person’s username in the LAGD Discord server",
+                "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -127,6 +260,31 @@
                 "min": "",
                 "max": "",
                 "return_format": "object"
+            },
+            {
+                "key": "field_5ac43a2e1b0c1",
+                "label": "Organizations",
+                "name": "people_organizations",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "lagd_organization"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
             }
         ],
         "location": [
@@ -155,7 +313,6 @@
             "author",
             "format",
             "page_attributes",
-            "featured_image",
             "categories",
             "tags",
             "send-trackbacks"
@@ -168,9 +325,9 @@
         "title": "Studio",
         "fields": [
             {
-                "key": "field_5abff4acfe94e",
-                "label": "Website",
-                "name": "website",
+                "key": "field_5ac4395c56bd2",
+                "label": "Twitter",
+                "name": "twitter",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
@@ -182,9 +339,44 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "prepend": "",
+                "prepend": "@",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_5abff4acfe94e",
+                "label": "Website",
+                "name": "website",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5ac453fe771cf",
+                "label": "Description",
+                "name": "description",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "delay": 0
             },
             {
                 "key": "field_5abff5110a4b8",
@@ -263,7 +455,6 @@
             "author",
             "format",
             "page_attributes",
-            "featured_image",
             "categories",
             "tags",
             "send-trackbacks"
@@ -276,12 +467,47 @@
         "title": "Game",
         "fields": [
             {
+                "key": "field_5ac439ba6799b",
+                "label": "Twitter",
+                "name": "twitter",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "@",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5abff25ad41f1",
+                "label": "Website",
+                "name": "website",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
                 "key": "field_5ab590854a733",
                 "label": "Description",
                 "name": "description",
                 "type": "wysiwyg",
                 "instructions": "",
-                "required": 1,
+                "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -295,10 +521,10 @@
                 "delay": 0
             },
             {
-                "key": "field_5abff25ad41f1",
-                "label": "Website",
-                "name": "website",
-                "type": "text",
+                "key": "field_5ab590c44a735",
+                "label": "Screenshots",
+                "name": "screenshots",
+                "type": "gallery",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -307,11 +533,17 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "min": "",
+                "max": "",
+                "insert": "append",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
             },
             {
                 "key": "field_5abff2726cd76",
@@ -339,31 +571,6 @@
                 "min": "",
                 "max": "",
                 "return_format": "object"
-            },
-            {
-                "key": "field_5ab590c44a735",
-                "label": "Screenshots",
-                "name": "screenshots",
-                "type": "gallery",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "min": "",
-                "max": "",
-                "insert": "append",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
             }
         ],
         "location": [
@@ -392,7 +599,6 @@
             "author",
             "format",
             "page_attributes",
-            "featured_image",
             "categories",
             "tags",
             "send-trackbacks"
